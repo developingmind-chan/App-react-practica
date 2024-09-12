@@ -1,4 +1,8 @@
-function Card(props: string) {
+interface CardProps {
+  body: string;
+}
+
+function Card(props: CardProps) {
   const { body } = props;
   return (
     <div
